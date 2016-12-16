@@ -8,7 +8,7 @@ The data information for all the WGBS data is in: https://www.dropbox.com/s/mdu5
   2.4 UMR (>=4CpG) detection
 	
 ##3. Collect all the UMCs in 31 WGBS data
-	The file with all the UMCs in 31 WGBS data is in: https://www.dropbox.com/s/vl3xrkujhnpczxd/1.%2031WGBS_UMC_All.bed.zip?dl=0
+The file with all the UMCs in 31 WGBS data is in: https://www.dropbox.com/s/vl3xrkujhnpczxd/1.%2031WGBS_UMC_All.bed.zip?dl=0
 
 ##4. Remove UMRs (>=4CpG; detected in 31 WGBS) and SNP (SNP142 downloaded from UCSC), then get the Candidate UMC
 	
@@ -19,7 +19,7 @@ The data information for all the WGBS data is in: https://www.dropbox.com/s/mdu5
    		row: UMC coordilation; 
 		col: chr; start; end; #UMC; #noUMC; #sample; UMC state in 31 WGBS [value: <=0.1 -> 1 | >0.1 -> -1 | nan -> 0]
    Example: 
-   	python ~/script/intergrate_UMC.py 31WGBS_UMC_Occupancy_chr1.txt ../WGBS_wig/cellwig/CD14_cells/chr1.wig ../WGBS_wig/cellwig/CD19cells/chr1.wig (other 29 .wig files) CD14_cells CD19cells (the names of other 29 WGBS samples)
+   python ~/script/intergrate_UMC.py 31WGBS_UMC_Occupancy_chr1.txt ../WGBS_wig/cellwig/CD14_cells/chr1.wig ../WGBS_wig/cellwig/CD19cells/chr1.wig (other 29 .wig files) CD14_cells CD19cells (the names of other 29 WGBS samples)
 	
 ##6. Using the "scUMC_detector.py" to calculate the Conservation Score and detect the sparse conserved under-methylated CpG
    ##Input: Candidate UMC with occupancy in 31 WGBS (https://www.dropbox.com/s/1ost397bpui6nun/2.%2031WGBS_UMC_Candidate_For_scUMC.bed.zip?dl=0)
