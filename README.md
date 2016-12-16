@@ -1,8 +1,8 @@
 ##1. Collect 31 WGBS data
-	The data information for all the WGBS data is in: https://www.dropbox.com/s/mdu5vxdmu5hr2r8/31WGBS_Sample_Information.xlsx?dl=0
+The data information for all the WGBS data is in: https://www.dropbox.com/s/mdu5vxdmu5hr2r8/31WGBS_Sample_Information.xlsx?dl=0
 	
 ##2. WGBS data pre-processing 
-	2.1 Mapping with BSMAP 
+2.1 Mapping with BSMAP 
 	2.2 QC with BSeQC
 	2.3 Mlevel Calling with MOABS
 	2.4 UMR (>=4CpG) detection
