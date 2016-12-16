@@ -14,13 +14,13 @@ The file with all the UMCs in 31 WGBS data can be downloaded from: https://www.d
 Use the "intersectBed" module in BEDTools (http://bedtools.readthedocs.io/en/latest/) with the parameter "-v"
 	
 	
-##5. Integrate the sample occupancy for the Candidate UMC
+##5. Using "intergrate_UMC.py" to integrate the sample occupancy for the Candidate UMC  
 **Input:** the file name of outfile; list of Mlevel .wig file (samne chr .wig file);  
 **Output:** UMC with occupancy in 31 WGBS;  
    		row: UMC coordilation;   
 		col: chr; start; end; #UMC; #noUMC; #sample; UMC state in 31 WGBS [value: <=0.1 -> 1 | >0.1 -> -1 | nan -> 0]  
 **Example:**   
-	python ~/script/intergrate_UMC.py 31WGBS_UMC_Occupancy_chr1.txt ../WGBS_wig/cellwig/CD14_cells/chr1.wig ../WGBS_wig/cellwig/CD19cells/chr1.wig (other 29 .wig files) CD14_cells CD19cells (the names of other 29 WGBS samples)
+	python intergrate_UMC.py 31WGBS_UMC_Occupancy_chr1.txt ../WGBS_wig/cellwig/CD14_cells/chr1.wig ../WGBS_wig/cellwig/CD19cells/chr1.wig (other 29 .wig files) CD14_cells CD19cells (the names of other 29 WGBS samples)
 	
 ##6. Using the "scUMC_detector.py" to calculate the Conservation Score and detect the sparse conserved under-methylated CpG  
    **Input:** Candidate UMC with occupancy in 31 WGBS (https://www.dropbox.com/s/1ost397bpui6nun/2.%2031WGBS_UMC_Candidate_For_scUMC.bed.zip?dl=0)  
