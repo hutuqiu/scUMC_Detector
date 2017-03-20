@@ -61,7 +61,8 @@ def main():
 	else:
 		sample_cutoff = 0
 	h=(1/pvalue_cutoff)**0.5
-	outfile = name + "_conserved_solo_UMC.bed"
+	#outfile = name + "_conserved_solo_UMC.bed"
+	outfile = name
 	umc_dict,smean,ssd = get_umc_dict(umc_file)
 	print umc_file
 	print pvalue_cutoff, h,  
