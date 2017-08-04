@@ -1,6 +1,4 @@
-.. image:: https://zenodo.org/badge/76662279.svg
-   :target: https://zenodo.org/badge/latestdoi/76662279
-
+<a href="https://zenodo.org/badge/latestdoi/76662279"><img src="https://zenodo.org/badge/76662279.svg" alt="DOI"></a>
 
 ##1. Collect 31 WGBS data
 The data information for all the WGBS data can be downloaded from: https://www.dropbox.com/s/mdu5vxdmu5hr2r8/31WGBS_Sample_Information.xlsx?dl=0
