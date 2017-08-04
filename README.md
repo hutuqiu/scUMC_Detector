@@ -1,3 +1,7 @@
+.. image:: https://zenodo.org/badge/76662279.svg
+   :target: https://zenodo.org/badge/latestdoi/76662279
+
+
 ##1. Collect 31 WGBS data
 The data information for all the WGBS data can be downloaded from: https://www.dropbox.com/s/mdu5vxdmu5hr2r8/31WGBS_Sample_Information.xlsx?dl=0
 	
@@ -27,3 +31,4 @@ Use the "intersectBed" module in BEDTools (http://bedtools.readthedocs.io/en/lat
    **Output:** scUMC detected in 31 WGBS based on 0.01 P-value in Chebyshev’s inequality method  
 **Example:**  
 	python scUMC_detector.py 31WGBS_UMC_Candidate_For_scUMC.bed 0.01 31WGBS_UMC_scUMC_Pvalue0.01.txt
+
